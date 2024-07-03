@@ -1,0 +1,385 @@
+@import url('https://fonts.googleapis.com/css2?family=Salsa&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Salsa', sans-serif;	
+}
+
+.background{
+	background: rgb(68, 148, 81);
+}
+/* ********************************** */
+/*             UTILIDADES             */
+/* ********************************** */
+.container {
+	max-width: 120rem;    
+	margin: 0 auto;  
+    align-items: center;
+}
+
+.heading-1 {
+	text-align: center;
+	font-weight: 300;
+	font-size: 3rem;
+}
+
+/* ********************************** */
+/*               HEADER               */
+/* ********************************** */
+
+
+.container-hero {
+	background-color: rgb(68, 148, 81);
+}
+
+.hero {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 2rem 15rem;
+}
+
+.customer-support {
+	display: flex;
+	align-items: center;
+	gap: 2rem;
+}
+
+.customer-support img {
+	font-size: 3.3rem;
+}
+
+.content-customer-support {
+	display: flex;
+	flex-direction: column;
+}
+
+.container-logo {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+}
+
+.container-logo img {
+	font-size: 3rem;
+}
+
+.container-logo h1 a {
+	text-decoration: none;
+	color: #000;
+	font-size: 3rem;
+	text-transform: uppercase;
+	letter-spacing: -1px;
+}
+
+.container-user {
+	display: flex;
+	gap: 1rem;
+	cursor: pointer;
+}
+
+.container-user .fa-user {
+	font-size: 3rem;
+	color: green;
+	padding-right: 2.5rem;
+	border-right: 1px solid #e2e2e2;
+}
+
+.container-user .fa-basket-shopping {
+	font-size: 3rem;
+	color: green;
+	padding-left: 1rem;
+}
+
+.content-shopping-cart {
+	display: flex;
+	flex-direction: column;
+}
+
+/* ********************************** */
+/*               NAVBar               */
+/* ********************************** */
+.container-navbar {
+	background-color: rgb(68, 148, 81);
+}
+
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1rem 15rem;
+}
+
+.navbar .fa-bars {
+	display: none;
+}
+
+.menu {
+	display: flex;
+	gap: 2rem;
+}
+
+.menu li {
+	list-style: none;
+}
+
+.menu a {
+	text-decoration: none;
+	font-size: 1.3rem;
+	color: black;
+	font-weight: 600;
+	text-transform: uppercase;
+	position: relative;
+}
+
+.menu a::after {
+	content: '';
+	width: 1.5rem;
+	height: 1px;
+	background-color: #fff;
+	position: absolute;
+	bottom: -3px;
+	left: 50%;
+	transform: translate(-50%, 50%);
+	opacity: 0;
+	transition: all 0.3s ease;
+}
+
+.menu a:hover::after {
+	opacity: 1;
+}
+
+.menu a:hover {
+	color: #fff;
+}
+
+/* ********************************** */
+/*               BANNER               */
+/* ********************************** */
+
+.banner {
+	background-image: linear-gradient(100deg, #000000, #00000020),
+		url('https://www.semana.com/resizer/v2/3WMDMSJ3KBH3ZK4CUPJ224AZYM.jpg?auth=af34ecfacec9f9e3b9d0874d936e52a438da3595b9eceb922c165aff6bec85f4&smart=true&quality=75&width=1280&height=720');
+    height: 40rem;
+	background-size: cover;
+	background-position: center;
+}
+
+.content-banner {
+	max-width: 90rem;
+	margin: 0 auto;
+	padding: 25rem 0;
+}
+
+.content-banner h2 {
+	color: #fff;
+	font-size: 3.5rem;
+	font-weight: 500;
+	line-height: 1.2;
+}
+
+/* ********************************** */
+/*             CATEGORIES             */
+/* ********************************** */
+.contenedor{
+    height: 550px;
+	background: rgb(68, 148, 81);
+    justify-content: center;
+	padding: 0 300px;
+}
+
+.top-categories {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+	margin-bottom: 3rem;
+}
+
+.container-categories {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 3rem;
+}
+
+.card-category {
+	height: 20rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	border-radius: 4rem;
+	gap: 2rem;
+    padding: 2rem 15rem;
+}
+
+.category-Cocina {
+	background-image: linear-gradient(#00000080, #00000080),
+		url('https://i.pinimg.com/originals/b5/e0/28/b5e02888088d6f076bd3bf6fad684a0b.jpg');
+	background-size: cover;
+	background-position: bottom;
+	background-repeat: no-repeat;
+}
+
+.category-Productos {
+	background-image: linear-gradient(#00000080, #00000080),
+		url('https://encolombia.com/wp-content/uploads/2021/03/Productos-agricolas.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.card-category a{
+	text-decoration: none;
+} 
+
+.card-category p {
+	font-size: 2.5rem;
+	color: #fff;
+	text-transform: capitalize;
+	position: relative;	
+}
+
+.card-category p::after {
+	content: '';
+	width: 2.5rem;
+	height: 2px;
+	background-color: #fff;
+	position: absolute;
+	bottom: -1rem;
+	left: 50%;
+	transform: translate(-50%, 50%);
+}
+
+/* ********************************** */
+/*             Nosotros               */
+/* ********************************** */
+
+.contenedor1{
+	height: 650px;
+	background: rgb(75, 134, 85);
+}
+
+.Nosotros{
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+}
+
+.contenedor-nosotros{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 3rem;
+}
+.card{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 0 50px;
+}
+.texto h1{	
+	font-weight: 350;
+	font-size: 1.5rem;
+}
+
+/* ********************************** */
+/*             Servicios              */
+/* ********************************** */
+.contenedor2{
+	height: 650px;
+	background: rgb(58, 192, 80);
+}
+.Servicios{
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+}
+.contenedor-sevicios{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 3rem;
+}
+.card1{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 0 50px;
+}
+.img-normalizada{
+	width: 400px;
+	height: 400px;
+	object-fit: cover;
+}
+.card1 h2{
+	font-weight: 500;
+	font-size: 2.5rem;	
+}
+.card1 h1{
+	font-weight: 300;
+	font-size: 1.5rem;
+}
+
+/* ********************************** */
+/*             Footer                 */
+/* ********************************** */
+
+.footer {
+	background: rgb(40, 94, 49);	
+}
+.contenedor3{
+	height: 250px;	
+}
+.contendor-footer{
+	display: flex;
+	flex-direction: column;
+	gap: 4rem;
+	padding: 3rem;
+}
+.menu-footer {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 1rem;
+	
+}
+.contact-info{
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+}
+.information{	
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;		
+}
+.contact-info h2{
+	font-weight: 500;
+	font-size: 2.5rem;
+}
+.information ul{
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+.information ul li{
+	list-style: none;
+	color: black;
+	font-size: 1.4rem;
+	font-weight: 300;
+}
+.information ul li a{
+	text-decoration: none;
+	color: black;
+	font-weight: 300;
+}
+.copyright {
+	display: flex;
+	justify-content: space-between;
+	padding-top: 2rem;		
+}
+
+.copyright p {	
+	font-weight: 400;
+	font-size: 1.6rem;
+}

@@ -1,0 +1,164 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+/*....................*/
+
+.heading-1 {
+	text-align: center;
+	font-weight: 300;
+	font-size: 3rem;
+}
+
+.container1-hero {
+	background-color: rgb(68, 148, 81);
+}
+
+.hero {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 2rem 15rem;
+}
+
+.customer-support {
+	display: flex;
+	align-items: center;
+	gap: 2rem;
+}
+
+.customer-support img {
+	font-size: 3.3rem;
+}
+
+.content-customer-support {
+	display: flex;
+	flex-direction: column;
+}
+
+.container1-logo {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+}
+
+.container1-logo img {
+	font-size: 3rem;
+}
+
+.container1-logo h1 a {
+	text-decoration: none;
+	color: #000;
+	font-size: 3rem;
+	text-transform: uppercase;
+	letter-spacing: -1px;
+}
+
+.container1-user {
+	display: flex;
+	gap: 1rem;
+	cursor: pointer;
+}
+
+.container1-user .fa-user {
+	font-size: 3rem;
+	color: green;
+	padding-right: 2.5rem;
+	border-right: 1px solid #e2e2e2;
+}
+
+.container1-user .fa-basket-shopping {
+	font-size: 3rem;
+	color: green;
+	padding-left: 1rem;
+}
+
+.content-shopping-cart {
+	display: flex;
+	flex-direction: column;
+    
+}
+/*....................*/
+
+.container {
+    display: flex;
+}
+
+.sidebar {
+    width: 200px;
+    background-color: #333;
+    color: #fff;
+    padding-top: 20px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.sidebar ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+}
+
+.sidebar ul li a:hover {
+    background-color: #555;
+}
+
+.main-content {
+    flex: 1;
+    padding: 20px;
+}
+
+.productos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.producto {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.producto img {
+    max-width: 100%;
+    max-height: 400px;
+    height: auto;
+}
+
+.producto h2 {
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
+
+.producto p {
+    color: #666;
+}
+
+.producto button {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 10px;
+    height: 50px;
+    width: 250px;
+    font-size: 20px;
+}
+
+.producto button:hover {
+    background-color: #45a049;
+}
